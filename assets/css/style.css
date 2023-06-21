@@ -1,0 +1,319 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+/* Global css file */
+body{
+	background: #F9FAFF;
+	font-family: 'Nunito', sans-serif;
+}
+h1,h2,h3{
+	font-family: 'Playfair Display', serif;
+}
+h4,h5,h6{
+	font-family: 'Nunito', sans-serif;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	padding: 0;
+}
+.no-padding{
+	padding: 0;
+}
+.md-75{
+	margin-bottom: 75px;
+}
+.title-border{
+	background: #FDC435;
+    height: 3px;
+    width: 85px;
+    margin: 10px auto 75px;
+}
+
+
+/* header section css */
+header{
+	position: relative;
+}
+header .banner-img{
+	position: absolute;
+    width: 44%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+.navbar .navbar-brand{
+	font-family: 'Comfortaa', cursive;
+	font-family: 22px;
+	font-weight: 700;
+	line-height: 45px;
+}
+.navbar .nav-item{
+	margin: 0 20px;
+}
+.navbar .nav-link{
+	position: relative;
+	overflow: hidden;
+	font-size: 18px;
+    color: #25282B;
+}
+.navbar .nav-link::after{
+	content: '';
+    position: absolute;
+    width: 75%;
+    background: #25282B;
+    height: 2px;
+    bottom: 0;
+    left: -100%;
+    transition: all 0.3s ease-in-out;
+}
+.navbar .nav-link:hover::after{
+	left: 13.5%;
+}
+/* intro section css */
+.intro-section{
+	padding: 70px 100px 0 0;
+}
+.intro-section h4{
+	font-size: 20px;
+    font-weight: 700;
+    color: #FDC435;
+}
+.intro-section h1{
+	font-size: 55px;
+    font-weight: 700;
+    line-height: 65px;
+    margin: 10px 0;
+    color: #25282B;
+}
+.intro-section p{
+	font-size: 22px;
+	color: #828282;
+}
+.intro-section ul{
+	margin: 36px 0;
+}
+.intro-section li{
+	list-style: none;
+    display: inline;
+    margin-right: 20px;
+}
+.btn-project{
+	background: #FDC435;
+    color: #25282A;
+    padding: 12px 35px;
+    border: 1px solid #FDC435;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    transition: all 0.3s ease-in-out;
+}
+.btn-project:hover{
+	background: #fff;
+}
+.btn-linkedin{
+	background: #fff;
+    color: #25282A;
+    padding: 12px 35px;
+    border: 1px solid #25282B;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    transition: all 0.3s ease-in-out;
+}
+.btn-linkedin:hover{
+	background: #FDC435;
+	border: 1px solid #FDC435;
+}
+
+
+/* projects section css */
+.project-section{
+	padding: 150px 0 50px;
+}
+.project-section h2{
+	font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: #25282B
+}
+.project-section h3{
+	font-size: 38px;
+    font-weight: 700;
+    color: #25282B;
+}
+.project-section p{
+	font-size: 18px;
+    color: #828282;
+    line-height: 30px;
+    padding-right: 40px;
+}
+.project-section .btn-portfolio{
+	background: #fff;
+    border: 2px solid #25282B;
+    padding: 10px 40px;
+    border-radius: 25px;
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    transition: all 0.3s ease-in-out;
+}
+.project-section .btn-portfolio:hover{
+	background: #FDC435;
+	border: 2px solid #F9FAFF;
+}
+.project-section .right-img{
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+.project-section .left-img{
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+.background-left{
+	background: #ffffff;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	padding: 140px 40px;
+}
+.background-right{
+	background: #FFFFFF;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 150px 40px;
+}
+
+
+/* about section css */
+.about-section{
+	padding: 100px 0;
+}
+.about-section h2{
+	font-size: 46px;
+    font-weight: 700;
+    color: #25282B;
+}
+.about-section p{
+	font-size: 24px;
+    margin: 20px 0 30px;
+    line-height: 35px;
+    color: #828282;
+}
+.about-img{
+	width: 100%;
+	height: auto;
+}
+
+
+/* contact section css */
+.contact-section{
+    padding: 25px 0 100px
+}
+.contact-section h2{
+	font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+    color: #25282B;
+}
+.contact-section label{
+	margin: 10px 0 10px;
+	font-size: 18px;
+}
+.form-control{
+/*	background: #F9FAFF;*/
+	border: 1px solid #eee;
+    outline: none;
+}
+.form-control:focus{
+	outline: none;
+	box-shadow: none;
+}
+.contact-section .btn-project{
+	float: right;
+	margin: 20px 0;
+}
+
+
+
+/* footer section css */
+footer{
+	background: url(../img/footer-img.png) no-repeat center bottom;
+	background-size: 100% 70%;
+    padding: 25px 0 100px;
+}
+.social-media ul{
+	text-align: center;
+}
+.social-media ul li{
+	list-style: none;
+	display: inline;
+}
+
+.social-media ul li a .fa-brands,
+.social-media ul li a .fa-solid{
+	font-size: 35px;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	color: #25282B;
+}
+footer p{
+	font-size: 16px;
+    text-align: center;
+    color: #828282;
+}
+
+
+/* responsive css mobile */
+@media(min-width:320px) and (max-width:576px){
+	.intro-section{padding: 50px 0px 20px;}
+	.intro-section h1{font-size: 32px;line-height: 42px;}
+	.intro-section p{font-size: 17px;}
+	.btn-linkedin, .btn-project{padding: 10px 25px;}
+	header .banner-img{position: relative; width: 100%}
+
+	.project-section{padding: 20px 0 20px;}
+	.project-section h2{font-size: 30px}
+	.title-border{width: 75px; margin: 10px auto 25px;}
+	.background-left{padding: 20px;margin: 0; border-radius: 0;}
+	.background-right{padding: 20px; border-radius: 0}
+	.project-section h3{font-size: 26px;}
+	.project-section p{font-size: 16px; line-height: 28px;}
+	.project-section .btn-portfolio{padding: 10px 30px;}
+	.project-section .right-img,
+	.project-section .left-img{border-radius: 0;}
+	.project-section .no-padding{margin: 0;}
+	.md-75{margin-bottom: 15px}
+
+
+	.about-section{padding: 40px 0;}
+	.about-section h2{font-size: 32px; text-align: center;}
+	.about-section p{
+		font-size: 20px;
+    	margin: 15px 0 20px;
+    	line-height: 28px;
+    	text-align: center;
+	}
+	.about-section .btn-project{
+		padding: 10px 25px;
+		display: block;
+		width: 120px;
+		margin: 0 auto 25px;
+	}
+	.about-section .no-padding{margin: 0}
+	.about-img{
+		width: 75%;
+    	display: block;
+    	margin: 0 44px;
+	}
+
+
+	.contact-section{padding: 25px 0;}
+	.contact-section h2{font-size: 32px;}
+	.contact-section, .offset-4{margin-left: 0;}
+
+}
